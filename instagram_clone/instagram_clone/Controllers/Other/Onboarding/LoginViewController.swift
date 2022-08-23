@@ -9,6 +9,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    
+    // MARK: - SubViews
     private let usernameEmailField: UITextField = {
         return UITextField()
     }()
@@ -39,6 +41,8 @@ class LoginViewController: UIViewController {
         return UIView()
     }()
     
+    
+    // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,6 +57,8 @@ class LoginViewController: UIViewController {
         //asign frames
     }
     
+    
+    // MARK: - Private Functions
     private func addSubViews() {
         self.view.addSubview(usernameEmailField)
         self.view.addSubview(passwordField)
@@ -63,6 +69,8 @@ class LoginViewController: UIViewController {
         self.view.addSubview(headerView)
     }
     
+    
+    // MARK: - OBJC Functions
     @objc private func didTapLoginButton() {
         
     }
