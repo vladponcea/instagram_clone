@@ -29,6 +29,9 @@
 		F5774CB928B4CDD0007C20C0 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5774CB828B4CDD0007C20C0 /* PostEditorViewController.swift */; };
 		F5774CBB28B4CDDF007C20C0 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5774CBA28B4CDDF007C20C0 /* PublishPostViewController.swift */; };
 		F5774CBD28B4E25D007C20C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5774CBC28B4E25D007C20C0 /* GoogleService-Info.plist */; };
+		F5F67EF328B4E8C2007BF4A2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F67EF228B4E8C2007BF4A2 /* DatabaseManager.swift */; };
+		F5F67EF528B4E954007BF4A2 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F67EF428B4E954007BF4A2 /* AuthManager.swift */; };
+		F5F67EF728B4E975007BF4A2 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F67EF628B4E975007BF4A2 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		F5774CB828B4CDD0007C20C0 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		F5774CBA28B4CDDF007C20C0 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		F5774CBC28B4E25D007C20C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5F67EF228B4E8C2007BF4A2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		F5F67EF428B4E954007BF4A2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		F5F67EF628B4E975007BF4A2 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,9 +153,12 @@
 			children = (
 				F5774C8428B4CBAA007C20C0 /* AppDelegate.swift */,
 				F5774C8628B4CBAA007C20C0 /* SceneDelegate.swift */,
+				F5F67EF228B4E8C2007BF4A2 /* DatabaseManager.swift */,
 				F5774C8D28B4CBAB007C20C0 /* Assets.xcassets */,
 				F5774CBC28B4E25D007C20C0 /* GoogleService-Info.plist */,
 				F5774C9228B4CBAB007C20C0 /* Info.plist */,
+				F5F67EF428B4E954007BF4A2 /* AuthManager.swift */,
+				F5F67EF628B4E975007BF4A2 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -179,14 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				F5774CA728B4CD2E007C20C0 /* Onboarding */,
-				F5774CAC28B4CD5B007C20C0 /* PostViewController.swift */,
-				F5774CAE28B4CD76007C20C0 /* EditProfileViewController.swift */,
-				F5774CB028B4CD7E007C20C0 /* SettingsViewController.swift */,
-				F5774CB228B4CD8F007C20C0 /* ListViewController.swift */,
-				F5774CB428B4CD9E007C20C0 /* SearchViewController.swift */,
-				F5774CB628B4CDA9007C20C0 /* SearchResultViewController.swift */,
-				F5774CB828B4CDD0007C20C0 /* PostEditorViewController.swift */,
-				F5774CBA28B4CDDF007C20C0 /* PublishPostViewController.swift */,
+				F5F67EF128B4E81D007BF4A2 /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -198,6 +200,21 @@
 				F5774CAA28B4CD43007C20C0 /* RegistrationViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F5F67EF128B4E81D007BF4A2 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F5774CAC28B4CD5B007C20C0 /* PostViewController.swift */,
+				F5774CAE28B4CD76007C20C0 /* EditProfileViewController.swift */,
+				F5774CB028B4CD7E007C20C0 /* SettingsViewController.swift */,
+				F5774CB228B4CD8F007C20C0 /* ListViewController.swift */,
+				F5774CB428B4CD9E007C20C0 /* SearchViewController.swift */,
+				F5774CB628B4CDA9007C20C0 /* SearchResultViewController.swift */,
+				F5774CB828B4CDD0007C20C0 /* PostEditorViewController.swift */,
+				F5774CBA28B4CDDF007C20C0 /* PublishPostViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,12 +340,15 @@
 				F5774C8928B4CBAA007C20C0 /* HomeViewController.swift in Sources */,
 				F5774CAB28B4CD43007C20C0 /* RegistrationViewController.swift in Sources */,
 				F5774CB928B4CDD0007C20C0 /* PostEditorViewController.swift in Sources */,
+				F5F67EF728B4E975007BF4A2 /* StorageManager.swift in Sources */,
 				F5774CAD28B4CD5B007C20C0 /* PostViewController.swift in Sources */,
+				F5F67EF328B4E8C2007BF4A2 /* DatabaseManager.swift in Sources */,
 				F5774CA228B4CCC1007C20C0 /* NotificationsViewController.swift in Sources */,
 				F5774CB728B4CDA9007C20C0 /* SearchResultViewController.swift in Sources */,
 				F5774CA928B4CD39007C20C0 /* LoginViewController.swift in Sources */,
 				F5774CB528B4CD9E007C20C0 /* SearchViewController.swift in Sources */,
 				F5774CA428B4CCCD007C20C0 /* ProfileViewController.swift in Sources */,
+				F5F67EF528B4E954007BF4A2 /* AuthManager.swift in Sources */,
 				F5774C8528B4CBAA007C20C0 /* AppDelegate.swift in Sources */,
 				F5774C8728B4CBAA007C20C0 /* SceneDelegate.swift in Sources */,
 				F5774CB328B4CD8F007C20C0 /* ListViewController.swift in Sources */,
