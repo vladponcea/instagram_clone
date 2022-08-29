@@ -30,5 +30,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:631032957648:ios:32f5765a4e648e66106cd5</string>
+	<key>DATABASE_URL</key>
+	<string>https://instagram-clone-6ac49-default-rtdb.europe-west1.firebasedatabase.app</string>
 </dict>
 </plist>
