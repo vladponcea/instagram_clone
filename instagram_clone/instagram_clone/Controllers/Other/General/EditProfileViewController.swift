@@ -120,7 +120,10 @@ final class EditProfileViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.section][indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: FormTableViewCell.identifier, for: indexPath) as! FormTableViewCell
+        
         cell.configure(with: model)
+        cell.delegate = self
+        
         return cell
     }
     
@@ -136,6 +139,7 @@ final class EditProfileViewController: UIViewController, UITableViewDataSource {
     
     @objc private func didTapSave() {
         // Save info to database
+        dismiss(animated: true, completion: nil)
     }
     
     @objc private func didTapCancel() {
@@ -158,5 +162,12 @@ final class EditProfileViewController: UIViewController, UITableViewDataSource {
         actionSheet.popoverPresentationController?.sourceView = view
         
         present(actionSheet, animated: true)
+    }
+}
+
+extension EditProfileViewController: FormTableViewCellDelegate {
+    func formTableViewCell(_ cell: FormTableViewCell, didUpdateField updatedModel: EditProfileFormModel) {
+        // Update the model
+        print(updatedModel.value ?? "nil")
     }
 }
