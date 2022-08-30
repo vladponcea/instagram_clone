@@ -6,11 +6,16 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CameraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    private func didTapTakePicture() {
+        
     }
 }
