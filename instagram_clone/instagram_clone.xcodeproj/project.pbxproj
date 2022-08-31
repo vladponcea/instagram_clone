@@ -37,6 +37,7 @@
 		F5A51D8828BE3BC100E26698 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A51D8728BE3BC100E26698 /* PhotoCollectionViewCell.swift */; };
 		F5A51D8A28BE3BFB00E26698 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A51D8928BE3BFB00E26698 /* ProfileInfoHeaderCollectionReusableView.swift */; };
 		F5A51D8C28BE3C1D00E26698 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A51D8B28BE3C1D00E26698 /* ProfileTabsCollectionReusableView.swift */; };
+		F5B1EBB028BF876400C8A4F6 /* MOdels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1EBAF28BF876400C8A4F6 /* MOdels.swift */; };
 		F5B4698728B4F78100CB2056 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4698628B4F78100CB2056 /* Extensions.swift */; };
 		F5F67EF328B4E8C2007BF4A2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F67EF228B4E8C2007BF4A2 /* DatabaseManager.swift */; };
 		F5F67EF528B4E954007BF4A2 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F67EF428B4E954007BF4A2 /* AuthManager.swift */; };
@@ -78,6 +79,7 @@
 		F5A51D8728BE3BC100E26698 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5A51D8928BE3BFB00E26698 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		F5A51D8B28BE3C1D00E26698 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
+		F5B1EBAF28BF876400C8A4F6 /* MOdels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOdels.swift; sourceTree = "<group>"; };
 		F5B4698628B4F78100CB2056 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F5F67EF228B4E8C2007BF4A2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		F5F67EF428B4E954007BF4A2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		F5774C9A28B4CC01007C20C0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F5B1EBAF28BF876400C8A4F6 /* MOdels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				F5774CBB28B4CDDF007C20C0 /* PublishPostViewController.swift in Sources */,
 				F5774CA028B4CCB0007C20C0 /* CameraViewController.swift in Sources */,
 				F5774C8928B4CBAA007C20C0 /* HomeViewController.swift in Sources */,
+				F5B1EBB028BF876400C8A4F6 /* MOdels.swift in Sources */,
 				F5774CAB28B4CD43007C20C0 /* RegistrationViewController.swift in Sources */,
 				F5A51D7F28BE0B1D00E26698 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				F5774CB928B4CDD0007C20C0 /* PostEditorViewController.swift in Sources */,
